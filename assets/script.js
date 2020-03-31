@@ -41,10 +41,9 @@ $(".saveBtn").click(function() {
 
 // Paste events in local storage to correlated hour-block
 
-function displayEvents() {
+const keys = Object.keys(localStorage);
+keys.forEach(displayEvents);
 
-    for (var i = 0; i < localStorage.length; i++) {
-        let hour = i + 9;
-        $(`*[data-hour="${hour}"]`).val(JSON.parse(localStorage.getItem(`${hour}`)));
-    };
+function displayEvents(item) {
+    $(`*[data-hour="${item}"]`).val(JSON.parse(localStorage.getItem(`${item}`)));
 };
