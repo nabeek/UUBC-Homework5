@@ -45,7 +45,6 @@ function displayEvents() {
 
     for (var i = 0; i < localStorage.length; i++) {
         let hour = i + 9;
-        console.log(localStorage.getItem(`${hour}`))
         $(`*[data-hour="${hour}"]`).val(JSON.parse(localStorage.getItem(`${hour}`)));
     };
 };
