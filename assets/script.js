@@ -1,4 +1,4 @@
-displayEvents();        // Displays events in local storage
+displayEvents() || [];        // Displays events in local storage
 
 // Set current date in header
 
