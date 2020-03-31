@@ -7,7 +7,7 @@ Build an application that allows a user to track their workday activities: https
 Using a third-pary API and existing knowledge, build a day planner web application. Allow users to input text by-the-hour, and save those entries to local storage.
 
 # Screenshots
-![Daily Planner](#)
+![Daily Planner](https://raw.githubusercontent.com/nabeek/UUBC-Homework5/master/assets/planner%20screenshot.png)
 
 # Tech Used
 
