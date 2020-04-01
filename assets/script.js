@@ -47,3 +47,11 @@ keys.forEach(displayEvents);
 function displayEvents(item) {
     $(`*[data-hour="${item}"]`).val(JSON.parse(localStorage.getItem(`${item}`)));
 };
+
+
+// Function to clear schedule
+
+$("#clearSchedule").click(function() {
+    localStorage.clear();
+    window.location.assign("./index.html");
+});
